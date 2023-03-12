@@ -1,19 +1,26 @@
 var CACHE = "pwabuilder-page";
 
-self.addEventListener('install', async (event) => {
+self.addEventListener('install', (event) => {
+
   self.skipWaiting();
+
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.addAll([
+      .then(cache => cache.addAll([
+
         './index.html',
+
         './css/style.css',
+
         './js/script.js',
+
         './assets/img/portfolio/bird.png',
         './assets/img/portfolio/cat.png',
         './assets/img/portfolio/dog.png',
         './assets/img/portfolio/jaguar.png',
         './assets/img/portfolio/rabbit.png',
         './assets/img/portfolio/rat.png',
+        
         './assets/img/16.png',
         './assets/img/20.png',
         './assets/img/2/.png',
