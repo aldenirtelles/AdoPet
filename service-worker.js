@@ -48,7 +48,7 @@ self.addEventListener('install', async (event) => {
         './assets/img/192.png',
         './assets/img/256.png',
         './assets/img/512.png',
-        './assets/img/1024.png'
+        './assets/img/1024.png',
       ]))
   );
 });
