@@ -267,27 +267,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-            var resizeViewPort = function(width, height) {
-            var tmp = document.documentElement.style.overflow;
-            document.documentElement.style.overflow = "scroll";
-
-            if (window.outerWidth) {
-                window.resizeTo(
-                    width + (window.outerWidth - document.documentElement.clientWidth),
-                    height + (window.outerHeight - document.documentElement.clientHeight)
-                );
-            } else {
-                window.resizeTo(500, 500);
-                window.resizeTo(
-                    width + (500 - document.documentElement.clientWidth),
-                    height + (500 - document.documentElement.clientHeight)
-                );
-            }
-
-            document.documentElement.style.overflow = tmp;
-        };
-        </script>
+        <script>window.innerWidth === window.outerWidth</script>
         <script>navigator.serviceWorker.register('service-worker.js')</script>
     </body>
 </html>
