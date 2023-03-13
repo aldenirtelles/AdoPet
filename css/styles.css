@@ -11508,6 +11508,11 @@ html {
   background-color: #1a252f;
 }
 
+.mapa {
+  width: 400;
+  height: 250;
+}
+
 @media (max-width: 400px)
 {
   .mapa
